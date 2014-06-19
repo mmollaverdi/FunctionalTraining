@@ -8,8 +8,8 @@ object ValidationExercises {
     input.get(key).toSuccess(keyNotFound(key)).toValidationNel
   }
 
-  def nameValidation(name: String, lebel: String): ValidationNel[ErrorCode, String] = {
-    if (name.isEmpty) nameIsEmpty(lebel).failureNel else name.successNel
+  def nameValidation(name: String, label: String): ValidationNel[ErrorCode, String] = {
+    if (name.isEmpty) nameIsEmpty(label).failureNel else name.successNel
   }
 
   def passwordStrengthValidation(password: String): ValidationNel[ErrorCode, String] = {
