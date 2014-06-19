@@ -10,4 +10,7 @@ object RefTransExercises {
     else
       println("player two is the winner")
 
+  def winner(p1: Int, p2: Int): String = if (p1 > p2) "player one" else "player two"
+
+  def printWinner2(p1: Int, p2: Int) = println(s"${winner(p1, p2)} is the winner!")
 }
