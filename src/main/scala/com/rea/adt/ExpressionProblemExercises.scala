@@ -44,5 +44,5 @@ object Expr {
     case Or(a, b)     => show(a) + " or "  + show(b)
     case Not(expr)    => "not " + show(expr)
   }
-  
+
 }
